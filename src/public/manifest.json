@@ -1,0 +1,24 @@
+{
+  "name": "Bahia Surfers Radio - Radio Musical",
+  "short_name": "Bahia FM",
+  "description": "Radio Musical para amantes del Surf, el Skate, la Playa y los Deportes extremos. Classic Rock, Reggae y música surf 24/7 desde Tenerife.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D0D0D",
+  "theme_color": "#03258C",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

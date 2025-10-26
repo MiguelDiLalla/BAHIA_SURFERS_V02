@@ -1,0 +1,20 @@
+# Build outputs
+build
+dist
+node_modules
+
+# Cache and temp files
+.cache
+*.log
+.DS_Store
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Public assets
+public
+
+# Version control
+.git

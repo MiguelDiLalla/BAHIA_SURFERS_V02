@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    // Node.js environment configuration for Vite config files
+    "composite": true,
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "skipLibCheck": true,
+
+    // Type Checking
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Interop
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    // Emit
+    "isolatedModules": true,
+    "resolveJsonModule": true
+  },
+  "include": ["vite.config.ts", "postcss.config.js"]
+}
