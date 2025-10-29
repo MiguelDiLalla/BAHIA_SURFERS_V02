@@ -2,11 +2,12 @@ import { useState, useRef, useEffect } from 'react';
 import { PlayerButton } from './components/PlayerButton';
 import { MiniPlayer } from './components/MiniPlayer';
 import { PWAInstallPrompt } from './components/PWAInstallPrompt';
+import { ShareButton } from './components/ShareButton';
 import { ScrollingMessage } from './components/ScrollingMessage';
 import { SocialLinks } from './components/SocialLinks';
 import { SponsorLink } from './components/SponsorLink';
 import { VolumeControl } from './components/VolumeControl';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { Toaster } from './components/ui/sonner';
 import logoFullColor from './assets/logo_fullcolor.webp';
 import backgroundImage from './assets/BahiaFM_Color_background.webp';
@@ -96,8 +97,9 @@ export default function App() {
           </p>
         </header>
 
-        {/* PWA Install Button - Above Player */}
-        <div className="mb-12">
+        {/* Share and PWA Install Buttons - Above Player */}
+        <div className="mb-12 flex flex-col items-center gap-4">
+          <ShareButton />
           <PWAInstallPrompt isPlaying={isPlaying} />
         </div>
 
